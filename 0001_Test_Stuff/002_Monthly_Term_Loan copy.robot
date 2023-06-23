@@ -8,7 +8,6 @@ Documentation    Template robot suite
 *** Variables ***
 ${browser}    Chrome
 ${Borrower}    https://temenosdev.capcfintech.com/Browser/
-# ${Borrower}    https://ccpxpl.outsystemsenterprise.com/EWA/Login
 
 *** Test Cases ***
 
@@ -84,7 +83,6 @@ Create_Monthly_Term_Loan
     Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
 
     Sleep    3s
-    # Click Element    (//*[@title="Accept"])[3]
     Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
     Close All Browsers
@@ -220,8 +218,7 @@ Create_Monthly_Term_Loan
     Click Element    //*[contains(text(),'Find Loan')]
     Sleep    5s
     Wait Until Page Contains Element    //*[contains(text(),'Unauthorised')]
-    # Click Element    //*[contains(text(),'Unauthorised')]
-    # Sleep    3s
+
     Input Text    (//*[@name='C1__C1__C1__C1__C1__ENQAAFINDARRANGEMENTAL[1].SEARCHREQUEST[1].FILTERS[1].ARRANGEMENTID[1].OPERAND1'])[1]    ${arrangementId}
     Sleep    1s
     Click Element    (//*[@title='Executes the query'])[1]
@@ -232,9 +229,6 @@ Create_Monthly_Term_Loan
 
 
     Switch Window    ${handles}[1]    
-    # ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
-    # Log To Console    ${accountID}
-
 
     Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
     Sleep    2s
@@ -303,10 +297,7 @@ Google Log In
 
 
 FireFox Google Log In
-#         ${options}=    Evaluate  sys.modules['selenium.webdriver.chrome.options'].Options()    sys
-#     Call Method     ${options}    add_argument    --disable-notifications
-#     ${driver}=    Create Webdriver    Firefox    options=${options}
-#     Go To    ${Borrower}
+
    Open Browser    ${Borrower}    Firefox
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
@@ -349,7 +340,6 @@ Get Authenticator Code
     [Arguments]     ${passphrase}
     Log To Console    ${passphrase}
     ${result}=      Run Process     echo ${passphrase} | authenticator --data /Users/kennethc@capc.com.sg/temenosrobot/ generate --refresh once   shell=TRUE
-    # ${result}=    Run Process    echo abc
     Log To Console    test44
     Log To Console    ${result}
     ${match}        Get Regexp Matches   ${result.stdout}  kennethc@capc.com.sg: ([\\d]{6})  1

@@ -8,7 +8,6 @@ Documentation    Template robot suite
 *** Variables ***
 ${browser}    Chrome
 ${Borrower}    https://temenosdev.capcfintech.com/Browser/
-# ${Borrower}    https://ccpxpl.outsystemsenterprise.com/EWA/Login
 
 *** Test Cases ***
 
@@ -121,14 +120,12 @@ Create_Weekly_Term_Loan
     Click Element    (//*[@title='Validate'])[1]
     Sleep    15s
 
-    # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
     Click Element    (//*[@title="Commit"])[1]
     Sleep    20s
     Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
 
     Sleep    1s
-    # Click Element    (//*[@title="Accept"])[3]
     Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
 
@@ -341,10 +338,7 @@ Google Log In
     Sleep    20s
 
 FireFox Google Log In
-#         ${options}=    Evaluate  sys.modules['selenium.webdriver.chrome.options'].Options()    sys
-#     Call Method     ${options}    add_argument    --disable-notifications
-#     ${driver}=    Create Webdriver    Firefox    options=${options}
-#     Go To    ${Borrower}
+
    Open Browser    ${Borrower}    Firefox
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
@@ -388,7 +382,6 @@ Get Authenticator Code
     [Arguments]     ${passphrase}
     Log To Console    ${passphrase}
     ${result}=      Run Process     echo ${passphrase} | authenticator --data /Users/kennethc@capc.com.sg/temenosrobot/ generate --refresh once   shell=TRUE
-    # ${result}=    Run Process    echo abc
     Log To Console    test44
     Log To Console    ${result}
     ${match}        Get Regexp Matches   ${result.stdout}  kennethc@capc.com.sg: ([\\d]{6})  1

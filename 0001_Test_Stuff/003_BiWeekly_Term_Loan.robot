@@ -8,7 +8,6 @@ Documentation    Template robot suite
 *** Variables ***
 ${browser}    Chrome
 ${Borrower}    https://temenosdev.capcfintech.com/Browser/
-# ${Borrower}    https://ccpxpl.outsystemsenterprise.com/EWA/Login
 
 *** Test Cases ***
 
@@ -342,10 +341,7 @@ Google Log In
     Sleep    20s
 
 FireFox Google Log In
-#         ${options}=    Evaluate  sys.modules['selenium.webdriver.chrome.options'].Options()    sys
-#     Call Method     ${options}    add_argument    --disable-notifications
-#     ${driver}=    Create Webdriver    Firefox    options=${options}
-#     Go To    ${Borrower}
+
    Open Browser    ${Borrower}    Firefox
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
@@ -390,7 +386,6 @@ Get Authenticator Code
     [Arguments]     ${passphrase}
     Log To Console    ${passphrase}
     ${result}=      Run Process     echo ${passphrase} | authenticator --data /Users/kennethc@capc.com.sg/temenosrobot/ generate --refresh once   shell=TRUE
-    # ${result}=    Run Process    echo abc
     Log To Console    test44
     Log To Console    ${result}
     ${match}        Get Regexp Matches   ${result.stdout}  kennethc@capc.com.sg: ([\\d]{6})  1

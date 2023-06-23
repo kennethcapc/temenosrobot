@@ -9,7 +9,6 @@ Documentation    Template robot suite
 *** Variables ***
 ${browser}    Chrome
 ${Borrower}    https://temenosdev.capcfintech.com/Browser/
-# ${Borrower}    https://ccpxpl.outsystemsenterprise.com/EWA/Login
 
 *** Test Cases ***
 
@@ -142,7 +141,6 @@ Get Authenticator Code
     [Arguments]     ${passphrase}
     Log To Console    ${passphrase}
     ${result}=      Run Process     echo ${passphrase} | authenticator --data /Users/kennethc@capc.com.sg/temenosrobot/ generate --refresh once   shell=TRUE
-    # ${result}=    Run Process    echo abc
     Log To Console    test44
     Log To Console    ${result}
     ${match}        Get Regexp Matches   ${result.stdout}  kennethc@capc.com.sg: ([\\d]{6})  1
