@@ -18,7 +18,7 @@ Create Floor Stock Lead
     Call Method     ${options}    add_argument    --disable-notifications
     ${driver}=    Create Webdriver    Chrome    options=${options}
     Go To    ${Borrower}
-#    Open Browser    ${Borrower}    Chrome
+
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
     Wait Until Page Contains Element   //*[@id="identifierId"]

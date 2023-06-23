@@ -1,0 +1,25 @@
+2023-06-21 15:37:24,267 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2023-06-21 15:37:24,304 INFO o.a.j.JMeter: Loading user properties from: /Users/kennethc@capc.com.sg/Downloads/apache-jmeter-5.5/bin/user.properties
+2023-06-21 15:37:24,305 INFO o.a.j.JMeter: Loading system properties from: /Users/kennethc@capc.com.sg/Downloads/apache-jmeter-5.5/bin/system.properties
+2023-06-21 15:37:24,307 INFO o.a.j.JMeter: Copyright (c) 1998-2022 The Apache Software Foundation
+2023-06-21 15:37:24,307 INFO o.a.j.JMeter: Version 5.5
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: java.version=20.0.1
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: os.name=Mac OS X
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: os.arch=aarch64
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: os.version=12.5
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: file.encoding=UTF-8
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: java.awt.headless=null
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: Max memory     =1073741824
+2023-06-21 15:37:24,308 INFO o.a.j.JMeter: Available Processors =8
+2023-06-21 15:37:24,314 INFO o.a.j.JMeter: Default Locale=English (EN)
+2023-06-21 15:37:24,314 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2023-06-21 15:37:24,314 INFO o.a.j.JMeter: JMeterHome=/Users/kennethc@capc.com.sg/Downloads/apache-jmeter-5.5
+2023-06-21 15:37:24,314 INFO o.a.j.JMeter: user.dir  =/Users/kennethc@capc.com.sg/temenosrobot
+2023-06-21 15:37:24,314 INFO o.a.j.JMeter: PWD       =/Users/kennethc@capc.com.sg/temenosrobot
+2023-06-21 15:37:24,320 INFO o.a.j.JMeter: IP: 10.241.126.219 Name: Kenneths-MacBook-Pro.local FullName: 10.241.126.219
+2023-06-21 15:37:24,326 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2023-06-21 15:37:24,855 INFO o.a.j.JMeterGuiLauncher: Setting LAF to: com.github.weisj.darklaf.DarkLaf:com.github.weisj.darklaf.theme.DarculaTheme
+2023-06-21 15:37:26,439 INFO o.j.r.JARSourceHTTP: Requesting https://jmeter-plugins.org/repo/?installID=mac_os_x-4ef03369092680cdab19418ac688c329-gui
+2023-06-21 15:37:28,723 INFO o.j.r.PluginManager: Plugins Status: [jpgc-casutg=2.10, jpgc-plugins-manager=1.9, jpgc-webdriver=4.8.3.2, jmeter-core=5.5, jmeter-ftp=5.5, jmeter-http=5.5, jmeter-jdbc=5.5, jmeter-jms=5.5, jmeter-junit=5.5, jmeter-java=5.5, jmeter-ldap=5.5, jmeter-mail=5.5, jmeter-mongodb=5.5, jmeter-native=5.5, jmeter-tcp=5.5, jmeter-components=5.5]
+2023-06-21 15:37:28,724 INFO o.j.r.PluginManagerMenuItem: Plugins Manager has upgrades: [jpgc-webdriver]
