@@ -20,11 +20,12 @@ No Alternative
     Click Element    //*[contains(text(),'Get a verification code from the')]
 
 Google Log In
-        ${options}=    Evaluate  sys.modules['selenium.webdriver.chrome.options'].Options()    sys
-    Call Method     ${options}    add_argument    --disable-notifications
-    ${driver}=    Create Webdriver    Chrome    options=${options}
-    Go To    ${Borrower}
-
+    # ${options}=    Evaluate  sys.modules['selenium.webdriver.chrome.options'].Options()    sys
+    # Call Method     ${options}    add_argument    --disable-notifications
+    # ${driver}=    Create Webdriver    Chrome    options=${options}
+    # Go To    ${Borrower}
+    Open Browser    ${Borrower}    Chrome
+    Maximize Browser Window
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
     Wait Until Page Contains Element   //*[@id="identifierId"]
@@ -64,6 +65,7 @@ Google Log In
 FireFox Google Log In
 
    Open Browser    ${Borrower}    Firefox
+   Maximize Browser Window
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
     Wait Until Page Contains Element   //*[@id="identifierId"]

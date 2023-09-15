@@ -76,7 +76,9 @@ Create_Monthly_Term_Loan
     Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
     Sleep    3s
 
-    Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
+    Press Keys    None    TAB
+    Press Keys    None    ENTER 
+    # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
 
     Close All Browsers
@@ -127,7 +129,7 @@ Create_Monthly_Term_Loan
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -173,8 +175,8 @@ Create_Monthly_Term_Loan
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-CURRENCY--"]    SGD
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-AMOUNT--"]    10T
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-ACCT-NO--"]    SGD100010001
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
+    # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
+    # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
     Sleep    5s
 
     Click Element    (//*[@title='Validate'])[1]
@@ -182,15 +184,22 @@ Create_Monthly_Term_Loan
 
     Click Element    (//*[@title="Commit"])[1]
     Sleep    20s
-
+    Log To Console    It is here
     Click Element    //*[@title="Accept"]
+    # Click Element    //*[@id="C1__accept_version_warnings_button"]
+    # ${ele}    Get WebElement   //*[@id="C1__accept_version_warnings_button"]
+    # Execute Javascript    arguments[0].click();     ARGUMENTS    ${ele}
+    # Press Keys    None    TAB
+    # Press Keys    None    TAB
+    # Press Keys    None    ENTER 
+    Sleep    2s
     Sleep    20s
 
     Close All Browsers
 
     # Approval of Disbursement
 
-    FireFox Google Log In
+    Firefox Google Log In
 
     Input Text    //*[@id='userId']    CapCLMC02
     Click Element    //*[@id='Logon']/p[3]/input
@@ -226,7 +235,9 @@ Create_Monthly_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]    
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+
+
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]

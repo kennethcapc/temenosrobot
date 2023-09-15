@@ -1,0 +1,32 @@
+1694739460585	geckodriver	INFO	Listening on 127.0.0.1:61237
+1694739461109	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/bq/t1qvk5y55xl7rwtxynhc82br0000gn/T/rust_mozprofiletonLsi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694739461845	Marionette	INFO	Marionette enabled
+console.error: "Warning: unrecognized command line flag" "-remote-allow-hosts"
+1694739461993	Marionette	INFO	Listening on port 61259
+WebDriver BiDi listening on ws://127.0.0.1:61238
+2023-09-15 08:57:42.029 plugin-container[13273:185488] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 08:57:42.029 plugin-container[13273:185488] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 08:57:42.038 plugin-container[13273:185488] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 08:57:42.038 plugin-container[13273:185488] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 08:57:42.038 plugin-container[13273:185485] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 08:57:42.038 plugin-container[13273:185485] nil host used in call to allowsAnyHTTPSCertificateForHost:
+Read port: 61259
+1694739462147	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+UNSUPPORTED (log once): POSSIBLE ISSUE: unit 1 GLD_TEXTURE_INDEX_2D is unloadable and bound to sampler type (Float) - using zero texture because texture unloadable
+DevTools listening on ws://127.0.0.1:61238/devtools/browser/8d1a4297-eb90-45ce-a767-1e396a0d15df
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?opparams=%253Fhd%253Dcapc.com.sg&dsh=S34533399%3A1694739467764769&client_id=630683946012-pceuij9u0f96li2mia8l5rvqvcjlj5lv.apps.googleusercontent.com&hd=capc.com.sg&o2v=1&redirect_uri=https%3A%2F%2Fcapc.cloudflareaccess.com%2Fcdn-cgi%2Faccess%2Fcallback&response_type=code&scope=email+profile+openid&service=lso&state=5bdf02637de153b61f0743bf5098df0794f943a929847545dec3b9904ba319cd.JTdCJTIyaWF0JTIyJTNBMTY5NDczOTQ2NCUyQyUyMmF1dGhEb21haW4lMjIlM0ElMjJjYXBjLmNsb3VkZmxhcmVhY2Nlc3MuY29tJTIyJTJDJTIyaG9zdG5hbWUlMjIlM0ElMjJ0ZW1lbm9zZGV2LmNhcGNmaW50ZWNoLmNvbSUyMiUyQyUyMnJlZGlyZWN0VVJMJTIyJTNBJTIyJTJGQnJvd3NlciUyRiUyMiUyQyUyMmF1ZCUyMiUzQSUyMmE3NzJlZGQ3ZWRlNmRiOGNlNjYwYjBkYjdkOTA3YjFhNmQ4MzYxMTY2MTBjOTJlNGM5NTc5NzFlZDU4YmVmMTYlMjIlMkMlMjJpc1NhbWVTaXRlTm9uZUNvbXBhdGlibGUlMjIlM0F0cnVlJTJDJTIyaXNJRFBUZXN0JTIyJTNBZmFsc2UlMkMlMjJpc1JlZnJlc2glMjIlM0FmYWxzZSUyQyUyMm5vbmNlJTIyJTNBJTIybkZ1TGdoUjBOczdVRTBya0slMjIlMkMlMjJpZHBJZCUyMiUzQSUyMmRiYTZlNjg1LTY3MzgtNDI4Zi1hNTNkLWU0NTBiMDQ0OTFhYSUyMiUyQyUyMnNlcnZpY2VfdG9rZW5faWQlMjIlM0ElMjIlMjIlMkMlMjJzZXJ2aWNlX3Rva2VuX3N0YXR1cyUyMiUzQWZhbHNlJTJDJTIyYXV0aF9zdGF0dXMlMjIlM0ElMjJOT05FJTIyJTJDJTIyaXNfd2FycCUyMiUzQWZhbHNlJTJDJTIyaXNfZ2F0ZXdheSUyMiUzQWZhbHNlJTJDJTIybXRsc19hdXRoJTIyJTNBJTdCJTIyY2VydF9pc3N1ZXJfc2tpJTIyJTNBJTIyJTIyJTJDJTIyY2VydF9wcmVzZW50ZWQlMjIlM0FmYWxzZSUyQyUyMmNlcnRfc2VyaWFsJTIyJTNBJTIyJTIyJTJDJTIyY2VydF9pc3N1ZXJfZG4lMjIlM0ElMjIlMjIlMkMlMjJhdXRoX3N0YXR1cyUyMiUzQSUyMk5PTkUlMjIlN0QlMkMlMjJhcHBTZXNzaW9uSGFzaCUyMiUzQSUyMjlmYjc4MzcyZGI5ZjM2YzViODRhZTE1ZWUwZTg0ODMwZDM1MTlhNGE2Y2E0NDE3MTMxMGFiNWJlZDdiZGFmYWUlMjIlN0Q%253D&flowName=GeneralOAuthFlow&continue=https%3A%2F%2Faccounts.google.com%2Fsignin%2Foauth%2Fconsent%3Fauthuser%3Dunknown%26part%3DAJi8hAPjWfZc0sXCVyT6wdRK7HuXsgj1bCezpMmeYtdEAB2ucrGUuEjISPWeqM7ygXmxK5mHBmiQD38usBP0Z64QfxXsoFJODxa8LsyDbIjyRBbbSIqMaJ3p60cSEp9dzkwKZnzCXawEiH-nnvgnbr51ipK6EG6Sc7IntioRXKhasnhRi4ZM4CoomM8s-R_s9XB93ekbVHlTFrHa5dSIwQH7sMW_BzoC_dGYG51ICgADWFNtB8juSHtK1OiX5mI-ZqKKA9AHJie8tMjRE_pKMhuvzEm1XYpawIp0CxVyLKfX-wh3Acb_pLVaI0HKq-H1Au-a2RtucYuGDR_uj2HEIb_Hpv7BhRIBLhpmxNuhv1KJEwxKqno0d_cLoHNonkCmnJ4xU4QQhTDNewkwamfvVvwFlVF51MUvxJ5jgSAy_aHLJzSpGdly8fRyXHueTZC76ea9ziOiaW520_3u_fIaM-Z7zZaUgzjpku2R-ab-_2DiLG7sfokFW-s%26as%3DS34533399%253A1694739467764769%26client_id%3D630683946012-pceuij9u0f96li2mia8l5rvqvcjlj5lv.apps.googleusercontent.com%23&app_domain=https%3A%2F%2Fcapc.cloudflareaccess.com&rart=ANgoxcdmp0IYEN7Pl2nQ_OvMWDb0fR7c6cX-IZjkpmsknwYDRoiO7XGwwBzE3F0wOc_CjIq8xdL7fh_B2100H5DeY2_915a5zQ line 197 > injectedScript line 2 > eval line 36 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+2023-09-15 00:57:50.768 plugin-container[13290:186005] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:50.769 plugin-container[13290:186005] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 00:57:50.770 plugin-container[13290:186005] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:50.770 plugin-container[13290:186005] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 00:57:50.770 plugin-container[13290:186008] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:50.770 plugin-container[13290:186008] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 00:57:51.006 plugin-container[13293:186053] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:51.006 plugin-container[13293:186053] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 00:57:51.007 plugin-container[13293:186053] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:51.007 plugin-container[13293:186053] nil host used in call to allowsAnyHTTPSCertificateForHost:
+2023-09-15 00:57:51.007 plugin-container[13293:186052] nil host used in call to allowsSpecificHTTPSCertificateForHost
+2023-09-15 00:57:51.007 plugin-container[13293:186052] nil host used in call to allowsAnyHTTPSCertificateForHost:

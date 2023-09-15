@@ -5,7 +5,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 6.0.2 (Python 3.11.3 on darwin)" name="Generator">
+<meta content="Robot Framework 6.1.1 (Python 3.11.3 on darwin)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
 <style media="all" type="text/css">
 /* Generic and misc styles */
@@ -1150,7 +1150,7 @@ window.testdata = function () {
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
     var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK'];
+                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1629,22 +1629,22 @@ storage = function () {
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[0,0,37131],[[4,5,6,7,[],[0,7,37123],[],[[8,0,9,[],[0,72,37057,10],[]]],[],[1,0,1,0]]],[],[],[1,0,1,0]];
+window.output["suite"] = [1,2,3,0,[],[1,0,608719],[[4,5,6,0,[],[1,7,608709],[[7,8,9,10,[],[1,7,608707],[],[[11,0,12,[],[1,70,608633],[]]],[],[1,1,0,0]]],[],[],[1,1,0,0]]],[],[],[1,1,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*0001 Test Stuff","*/Users/kennethc@capc.com.sg/temenosrobot/0001_Test_Stuff","*0001_Test_Stuff","*001 Business Customer Creation","*/Users/kennethc@capc.com.sg/temenosrobot/0001_Test_Stuff/001_Business_Customer_Creation.robot","*0001_Test_Stuff/001_Business_Customer_Creation.robot","*<p>Template robot suite\x3c/p>","*Create_Corperate_Customer","*<p>Borrower Email Verfication Not Clicked, Status Should Remain Unverified\x3c/p>","*Execution terminated by signal"]);
+window.output["strings"] = window.output["strings"].concat(["*","*Temenosrobot","*/Users/kennethc@capc.com.sg/temenosrobot","*.","*0001 Test Stuff","*/Users/kennethc@capc.com.sg/temenosrobot/0001_Test_Stuff","*0001_Test_Stuff","*002 Monthly Term Loan copy","*/Users/kennethc@capc.com.sg/temenosrobot/0001_Test_Stuff/002_Monthly_Term_Loan copy.robot","*0001_Test_Stuff/002_Monthly_Term_Loan%20copy.robot","*<p>Template robot suite\x3c/p>","*Create_Monthly_Term_Loan","*<p>Creation of a monthly loan\x3c/p>"]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:00:37","fail":1,"label":"All Tests","pass":0,"skip":0}],[],[{"elapsed":"00:00:37","fail":1,"id":"s1","label":"0001 Test Stuff","name":"0001 Test Stuff","pass":0,"skip":0},{"elapsed":"00:00:37","fail":1,"id":"s1-s1","label":"0001 Test Stuff.001 Business Customer Creation","name":"001 Business Customer Creation","pass":0,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:10:09","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:10:09","fail":0,"id":"s1","label":"Temenosrobot","name":"Temenosrobot","pass":1,"skip":0},{"elapsed":"00:10:09","fail":0,"id":"s1-s1","label":"Temenosrobot.0001 Test Stuff","name":"0001 Test Stuff","pass":1,"skip":0},{"elapsed":"00:10:09","fail":0,"id":"s1-s1-s1","label":"Temenosrobot.0001 Test Stuff.002 Monthly Term Loan copy","name":"002 Monthly Term Loan copy","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1687510658228;
+window.output["baseMillis"] = 1694745547445;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 37140;
+window.output["generated"] = 609007;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
@@ -1894,8 +1894,8 @@ function searchTests(suitePattern, testPattern, includePattern, excludePattern) 
 function scrollToSelector(base, query) {
     $('#test-details-container').css('min-height', $(window).height());
     var anchor = query ? base + '?' + encodeURIComponent(query) : base;
-    window.location.hash = '';
     window.location.hash = window.prevLocationHash = anchor;
+    document.getElementById('test-details-container').scrollIntoView();
 }
 
 function renderSelector(args, template, stats) {
