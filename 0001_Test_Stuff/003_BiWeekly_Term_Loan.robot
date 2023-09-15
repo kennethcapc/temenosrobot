@@ -75,7 +75,7 @@ Create_BiWeekly_Term_Loan
     Click Element    //*[contains(text(),"Principal Interest")]
     Sleep    2s
 
-    Input Text    //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    104.00
+    Input Text    //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    52.00
     Sleep    2s
 
     ${ele}    Get WebElement   //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__TAB_-REPEAT-WITHIN-TABS_anchor_R4"]
@@ -89,7 +89,7 @@ Create_BiWeekly_Term_Loan
     Click Element    //*[contains(text(),"Penalty Interest")]
     Sleep    2s
 
-    Input Text    //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    104.00
+    Input Text    //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    52.00
     Sleep    2s
 
     ${ele}    Get WebElement   //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__TAB_-REPEAT-WITHIN-TABS_anchor_R4"]
@@ -134,7 +134,9 @@ Create_BiWeekly_Term_Loan
     Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
 
     Sleep    1s
-    Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
+    Press Keys    None    TAB
+    Press Keys    None    ENTER  
+    # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
     
     # Loan Approval
@@ -181,7 +183,7 @@ Create_BiWeekly_Term_Loan
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -278,7 +280,7 @@ Create_BiWeekly_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]    
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]

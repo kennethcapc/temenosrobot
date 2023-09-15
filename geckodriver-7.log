@@ -34,3 +34,5 @@ c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInU
 1694741974866	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
 2023-09-15 09:39:53.473 plugin-container[15490:222732] NSNotificationCenter connection invalid
+1694746373424	Marionette	INFO	Stopped listening on port 65266
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
