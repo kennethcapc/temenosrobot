@@ -7,10 +7,12 @@ Resource    ../resource/resource.robot
 Documentation    Template robot suite
 
 *** Variables ***
+
+
 *** Test Cases ***
 
 Create_Weekly_Term_Loan
-   [Documentation]    Borrower Email Verfication Not Clicked, Status Should Remain Unverified
+   [Documentation]    Creation of a biweekly term loan
 
     # Loan Creation
 
@@ -18,8 +20,8 @@ Create_Weekly_Term_Loan
 
     Input Text    //*[@id='userId']    CapCLMC01
     Click Element    //*[@id='Logon']/p[3]/input
-    Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
 
+    Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
 
     Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
@@ -32,6 +34,7 @@ Create_Weekly_Term_Loan
     Sleep    3s
 
     Wait Until Page Contains Element    (//*[@class="expandedSubGroupWithMultipleRows"])[2]
+
     Input Text    //input[@type='search']    CapC Small
     Sleep    2s
     
@@ -46,6 +49,7 @@ Create_Weekly_Term_Loan
 
     Input Text    //input[@title='Customer']    100522
     Sleep    2s
+
 
     Input Text    //*[@assocappname='CURRENCY']    SGD
     Sleep    1s
@@ -71,7 +75,7 @@ Create_Weekly_Term_Loan
     Click Element    //*[contains(text(),"Principal Interest")]
     Sleep    2s
 
-    Input Text    //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    104.00
+    Input Text    //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    52.00
     Sleep    2s
 
     ${ele}    Get WebElement   //*[@id="C1__C3__C1__C1__C4__C1__C1__C1__C1__TAB_-REPEAT-WITHIN-TABS_anchor_R4"]
@@ -85,7 +89,7 @@ Create_Weekly_Term_Loan
     Click Element    //*[contains(text(),"Penalty Interest")]
     Sleep    2s
 
-    Input Text    //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    104.00
+    Input Text    //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__C1__QUE_--AA-ARR-INTEREST--FIXED-RATE--_R1"]    52.00
     Sleep    2s
 
     ${ele}    Get WebElement   //*[@id="C1__C3__C1__C1__C4__C2__C1__C1__C1__TAB_-REPEAT-WITHIN-TABS_anchor_R4"]
@@ -98,7 +102,7 @@ Create_Weekly_Term_Loan
 
     Click Element    (//*[@class="C1__C3__C1__C1__heading ui-accordion-header ui-accordion-icons"])[4]
     Sleep    3s
-   
+
     Click Element    //*[@id="FREQ_C1__C3__C1__C1__C6__C1__C1__C1__C1__QUE_--AA-ARR-PAYMENT-SCHEDULE--PAYMENT-FREQ--_R1"]
     Sleep    2s
 
@@ -121,31 +125,33 @@ Create_Weekly_Term_Loan
     Sleep    10s
 
     Click Element    (//*[@title='Validate'])[1]
-    Sleep    15s
+    Sleep    15s  
     Sleep    20s
 
     Click Element    (//*[@title="Commit"])[1]
-    Sleep    20s
 
+    Sleep    20s
     Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+
     Sleep    1s
-
-    Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
+    Press Keys    None    TAB
+    Press Keys    None    ENTER  
+    # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
-
+    
     # Loan Approval
 
     Google Log In
 
     Input Text    //*[@id='userId']    CapCLMC02
     Click Element    //*[@id='Logon']/p[3]/input
-
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+
     Sleep    5s
     
     Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
-    Wait Until Page Contains Element     //*[contains(text(),'User Menu')]
 
+    Wait Until Page Contains Element     //*[contains(text(),'User Menu')]
     Click Element    //*[contains(text(),'User Menu')]
     Sleep    3s
 
@@ -175,8 +181,9 @@ Create_Weekly_Term_Loan
     Switch Window    ${handles}[1]    
 
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
+    # Log To Console    ${accountID}
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -222,8 +229,8 @@ Create_Weekly_Term_Loan
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-CURRENCY--"]    SGD
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-AMOUNT--"]    10T
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-ACCT-NO--"]    SGD100010001
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
+    # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
+    # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
     Sleep    5s
 
     Click Element    (//*[@title='Validate'])[1]
@@ -241,8 +248,8 @@ Create_Weekly_Term_Loan
 
     Input Text    //*[@id='userId']    CapCLMC02
     Click Element    //*[@id='Logon']/p[3]/input
-
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+
     Sleep    5s
     
     Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
@@ -273,7 +280,7 @@ Create_Weekly_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]    
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_A304093E2380EFE84096710_R1"]    1
+    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]

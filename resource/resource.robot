@@ -25,6 +25,8 @@ Google Log In
     # ${driver}=    Create Webdriver    Chrome    options=${options}
     # Go To    ${Borrower}
     Open Browser    ${Borrower}    Chrome
+    # Open Browser    ${Borrower}    headlessFirefox
+
     Maximize Browser Window
    Sleep    2s
    Click Element    //*[@id='idp1']/div[1]
@@ -101,6 +103,48 @@ FireFox Google Log In
     Sleep    2s
     Click Element    //*[@id="totpNext"]/div/button/span
     Sleep    20s
+
+Safari Google Log In
+
+   Open Browser    ${Borrower}    Safari
+   Maximize Browser Window
+   Sleep    2s
+   Click Element    //*[@id='idp1']/div[1]
+    Wait Until Page Contains Element   //*[@id="identifierId"]
+    Sleep    2s
+    Input Text    //*[@id ="identifierId"]    kennethc@capc.com.sg
+    Click Element    //*[@id="identifierNext"]/div/button/span
+    Sleep    2s
+
+    Capture Page Screenshot     OpsAddPartner004.png
+    Wait Until Page Contains Element    //*[@id="password"]/div[1]/div/div[1]/input
+    Sleep    2s
+    Input Text    //*[@id="password"]/div[1]/div/div[1]/input    Y2kuniontpjcred!
+    
+    Click Element    //*[@id="passwordNext"]/div/button/span
+    Capture Page Screenshot    CapOpButtonLogin1.png
+
+    Sleep    10s
+    ${element_count}=    Get Element Count    //*[text()='Try another way']
+   
+    ${element_count2}=    Get Element Count    //*[contains(text(),'Get a verification code from the')]
+
+    Log To Console    countings
+    Log To Console    ${element_count}
+    Log To Console    ${element_count2}
+    IF    ${element_count2} > 0
+        No Alternative
+    ELSE
+        Alternative
+    END
+    Sleep    3s
+    ${code}    Get Authenticator Code   kenneth
+    Input Text    //input[@type="tel"]  ${code}
+    Sleep    2s
+    Click Element    //*[@id="totpNext"]/div/button/span
+    Sleep    20s
+
+
 
 Get Authenticator Code
     [Documentation]  Authenticator needs to be set up for Google account
