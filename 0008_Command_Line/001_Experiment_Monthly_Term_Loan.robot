@@ -50,7 +50,7 @@ Experiment_Test
 
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]
-    Wait Until Page Contains Element    //input[@title='Customer']
+    # Wait Until Page Contains Element    //input[@title='Customer']
 
     Wait Until Page Contains Element    //input[@title='Customer']
     Input Text    //input[@title='Customer']    100522
