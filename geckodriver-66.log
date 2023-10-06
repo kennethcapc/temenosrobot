@@ -15,3 +15,7 @@ JavaScript warning: https://accounts.google.com/v3/signin/identifier?opparams=%2
 1695723082067	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, channelStatus: 2152398878, errorCode: 2, reason: error
 console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 324))
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1695782119725	Marionette	INFO	Stopped listening on port 62217
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: "Failed to fetch https://spocs.getpocket.com/user:" "NetworkError when attempting to fetch resource."
+!!! error running onStopped callback: TypeError: callback is not a function

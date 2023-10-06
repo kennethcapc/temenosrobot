@@ -18,8 +18,18 @@ Create_Monthly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s
@@ -53,7 +63,7 @@ Create_Monthly_Term_Loan
 
     Wait Until Page Contains Element    //input[@title='Customer']
 
-    Input Text    //input[@title='Customer']    100522
+    Input Text    //input[@title='Customer']    100514
     # Sleep    2s
     Sleep    0.5s
 
@@ -68,14 +78,14 @@ Create_Monthly_Term_Loan
     ${arrangementId}=    Get Text    (//*[@title='Arrangement'])[2]
     Log To Console    ${arrangementId}
 
-    Click Element    //*[contains(text(),'Commitment')]
+    Wait Until Keyword Succeeds    30s    5s    Click Element    //*[contains(text(),'Commitment')]
     # Sleep    2s
-    Wait Until Page Contains Element    (//*[@title="Amount"])[2]
+    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    (//*[@title="Amount"])[2]
 
-    Input Text    (//*[@title="Amount"])[2]    10T
+    Wait Until Keyword Succeeds    30s    5s    Input Text    (//*[@title="Amount"])[2]    10T
     # Sleep    1s
     Sleep    0.5
-    Input Text    (//*[@title="Term"])[2]    12M
+    Wait Until Keyword Succeeds    30s    5s    Input Text    (//*[@title="Term"])[2]    3M
     # Sleep    2s
     Sleep    0.5
 
@@ -85,17 +95,16 @@ Create_Monthly_Term_Loan
 
     Click Element    (//*[@title="Commit"])[1]
     # Sleep    20s
-    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]
+    # Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]
 
-    Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
-    # Sleep    3s
-    Sleep    0.5s
-    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@id="C1__accept_version_warnings_button"]
+    # Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+    # Sleep    0.5s
+    # Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@id="C1__accept_version_warnings_button"]
     # Press Keys    None    SHIFT+TAB    SHIFT+TAB
     # Press Keys    None    ENTER
     
-    Sleep    0.5s
-    Click Element    //*[@id="C1__accept_version_warnings_button"]/span
+    # Sleep    0.5s
+    # Click Element    //*[@id="C1__accept_version_warnings_button"]/span
     # Press Keys    None    TAB
     # Press Keys    None    ENTER
     Sleep    0.5s
@@ -109,8 +118,18 @@ Create_Monthly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s
@@ -183,8 +202,18 @@ Create_Monthly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -237,8 +266,18 @@ Create_Monthly_Term_Loan
 
     Firefox Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s

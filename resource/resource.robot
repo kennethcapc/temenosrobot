@@ -8,7 +8,9 @@ Documentation    Template robot suite
 
 *** Variables ***
 ${browser}    Chrome
-${Borrower}    https://temenosdev.capcfintech.com/Browser/
+# ${Borrower}    https://temenosdev.capcfintech.com/Browser/
+${Borrower}    https://temenosstg.capcfintech.com/Browser/
+
 
 *** Keywords ***
 Alternative

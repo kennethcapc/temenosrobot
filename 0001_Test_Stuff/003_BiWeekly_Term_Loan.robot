@@ -18,8 +18,18 @@ Create_BiWeekly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s
@@ -53,7 +63,7 @@ Create_BiWeekly_Term_Loan
 
     Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //input[@title='Customer']
 
-    Input Text    //input[@title='Customer']    100522
+    Input Text    //input[@title='Customer']    100514
     # Sleep    2s
     Sleep    0.5s
 
@@ -151,17 +161,17 @@ Create_BiWeekly_Term_Loan
 
     Click Element    (//*[@title="Commit"])[1]
     # Sleep    20s
-    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]
+    # Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]
 
-    Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+    # Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
     # Sleep    3s
-    Sleep    0.5s
-    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@id="C1__accept_version_warnings_button"]
+    # Sleep    0.5s
+    # Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@id="C1__accept_version_warnings_button"]
     # Press Keys    None    SHIFT+TAB    SHIFT+TAB
     # Press Keys    None    ENTER
     
-    Sleep    0.5s
-    Click Element    //*[@id="C1__accept_version_warnings_button"]/span
+    # Sleep    0.5s
+    # Click Element    //*[@id="C1__accept_version_warnings_button"]/span
     # Press Keys    None    TAB
     # Press Keys    None    ENTER
     Sleep    0.5s
@@ -175,8 +185,19 @@ Create_BiWeekly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
 
     # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s
@@ -249,8 +270,19 @@ Create_BiWeekly_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -303,8 +335,19 @@ Create_BiWeekly_Term_Loan
 
     Firefox Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
 
     # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     # Sleep    5s

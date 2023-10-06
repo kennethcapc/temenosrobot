@@ -18,9 +18,18 @@ Approve_Create_Corporate_Customer
     # Coperate Customer Creation
 
     Google Log In
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -66,9 +75,9 @@ Approve_Create_Corporate_Customer
     Sleep    5s
     Click Element    //*[@id="C1__C2__C1__C1__C2__TAB_-REPEAT-WITHIN-TABS_R4"]
     Sleep    3s
-    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R1"]    100554
+    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R1"]    100512
     Sleep    2s
-    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R2"]    100653
+    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R2"]    100513
     Click Element    //*[@id="C1__p4_validate_version_button"]
     Sleep    20s
 
@@ -81,8 +90,18 @@ Approve_Create_Corporate_Customer
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -101,7 +120,7 @@ Approve_Create_Corporate_Customer
     
 # 100535
 
-    Click Element    (//*[@title="Authorise"])[8]
+    Click Element    (//*[@title="Authorise"])[5]
     Sleep    20s
     
     Click Element    //*[@id="C1__C2__authorise_version_button"]
@@ -115,8 +134,18 @@ Delete_Create_Corporate_Customer
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -162,9 +191,9 @@ Delete_Create_Corporate_Customer
     Sleep    5s
     Click Element    //*[@id="C1__C2__C1__C1__C2__TAB_-REPEAT-WITHIN-TABS_R4"]
     Sleep    3s
-    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R1"]    100554
+    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R1"]    100512
     Sleep    2s
-    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R2"]    100653
+    Input Text    //*[@id="C1__C2__C1__C1__C2__C4__QUE_--CUSTOMER--REL-CUSTOMER--_R2"]    100513
     Click Element    //*[@id="C1__p4_validate_version_button"]
     Sleep    20s
 
@@ -177,8 +206,18 @@ Delete_Create_Corporate_Customer
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -197,7 +236,7 @@ Delete_Create_Corporate_Customer
     
 # 100535
 
-    Click Element    (//*[@title="Delete"])[8]
+    Click Element    (//*[@title="Delete"])[5]
     Sleep    20s
     
     Click Element    //*[@id="C1__C2__delete_version_button"]
