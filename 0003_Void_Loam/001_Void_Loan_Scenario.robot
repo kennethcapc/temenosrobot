@@ -18,8 +18,18 @@ Full_Approval_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -46,7 +56,7 @@ Full_Approval_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]
 
-    Input Text    //input[@title='Customer']    100522
+    Input Text    //input[@title='Customer']    100514
     Sleep    2s
 
     Input Text    //*[@assocappname='CURRENCY']    SGD
@@ -64,7 +74,7 @@ Full_Approval_Term_Loan
     Input Text    (//*[@title="Amount"])[2]    10T
     Sleep    1s
 
-    Input Text    (//*[@title="Term"])[2]    12M
+    Input Text    (//*[@title="Term"])[2]    3M
     Sleep    2s
 
     Click Element    (//*[@title='Validate'])[1]
@@ -73,13 +83,13 @@ Full_Approval_Term_Loan
     Click Element    (//*[@title="Commit"])[1]
     Sleep    20s
 
-    Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
-    Sleep    3s
+    # Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+    # Sleep    3s
 
-    Press Keys    None    TAB
-    Press Keys    None    ENTER 
+    # Press Keys    None    TAB
+    # Press Keys    None    ENTER 
     # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
-    Sleep    20s
+    # Sleep    20s
 
     Close All Browsers
 
@@ -87,8 +97,18 @@ Full_Approval_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -128,8 +148,9 @@ Full_Approval_Term_Loan
 
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
+    Select From List By Value    //*[@script-id="AADETAILSACTIVITYLOGPENDINGFIN_DRILLDOWN_R1"]    1
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
+    # Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -150,10 +171,17 @@ Full_Reject_Term_Loan
     # Loan Creation
 
     Google Log In
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
 
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
 
@@ -179,7 +207,7 @@ Full_Reject_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]
 
-    Input Text    //input[@title='Customer']    100522
+    Input Text    //input[@title='Customer']    100514
     Sleep    2s
 
     Input Text    //*[@assocappname='CURRENCY']    SGD
@@ -197,20 +225,20 @@ Full_Reject_Term_Loan
     Input Text    (//*[@title="Amount"])[2]    10T
     Sleep    1s
 
-    Input Text    (//*[@title="Term"])[2]    12M
+    Input Text    (//*[@title="Term"])[2]    3M
     Sleep    2s
 
     Click Element    (//*[@title='Validate'])[1]
     Sleep    20s
 
     Click Element    (//*[@title="Commit"])[1]
-    Sleep    20s
+    # Sleep    20s
 
-    Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
-    Sleep    3s
+    # Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+    # Sleep    3s
 
-    Press Keys    None    TAB
-    Press Keys    None    ENTER 
+    # Press Keys    None    TAB
+    # Press Keys    None    ENTER 
     # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
     Sleep    20s
 
@@ -220,10 +248,18 @@ Full_Reject_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
 
-    Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    Wait Until Keyword Succeeds    30s    5s    Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
     
     Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
@@ -261,8 +297,9 @@ Full_Reject_Term_Loan
 
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
+    Select From List By Value    //*[@script-id="AADETAILSACTIVITYLOGPENDINGFIN_DRILLDOWN_R1"]    4
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    4
+    # Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    4
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -287,8 +324,17 @@ Reverse_Approval_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -315,7 +361,7 @@ Reverse_Approval_Term_Loan
     ${handles}    Get Window Handles
     Switch Window    ${handles}[1]
 
-    Input Text    //input[@title='Customer']    100522
+    Input Text    //input[@title='Customer']    100514
     Sleep    2s
 
     Input Text    //*[@assocappname='CURRENCY']    SGD
@@ -333,22 +379,22 @@ Reverse_Approval_Term_Loan
     Input Text    (//*[@title="Amount"])[2]    10T
     Sleep    1s
 
-    Input Text    (//*[@title="Term"])[2]    12M
+    Input Text    (//*[@title="Term"])[2]    3M
     Sleep    2s
 
     Click Element    (//*[@title='Validate'])[1]
     Sleep    20s
 
     Click Element    (//*[@title="Commit"])[1]
-    Sleep    20s
+    # Sleep    20s
 
-    Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
-    Sleep    3s
+    # Select From List By Value    //*[@name="C1__WORKINGELEMENTS[1].DISPLAYWARNINGS[1].STATE"]    Received
+    # Sleep    3s
 
-    Press Keys    None    TAB
-    Press Keys    None    ENTER 
+    # Press Keys    None    TAB
+    # Press Keys    None    ENTER 
     # Click Element    //*[@id="C1__p4_accept_version_overrides_and_warnings_button"]
-    Sleep    20s
+    Sleep    15s
 
     Close All Browsers
 
@@ -356,8 +402,17 @@ Reverse_Approval_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -398,7 +453,10 @@ Reverse_Approval_Term_Loan
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
+
+    Select From List By Value    //*[@script-id="AADETAILSACTIVITYLOGPENDINGFIN_DRILLDOWN_R1"]    1
+
+    # Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C5__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
@@ -417,8 +475,17 @@ Reverse_Approval_Term_Loan
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -474,8 +541,17 @@ Reverse_Approval_Term_Loan
 
 
     FireFox Google Log In
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -516,7 +592,10 @@ Reverse_Approval_Term_Loan
     ${accountID}=    Get Text    (//*[@class="tc-default-input tc-rounded-1 tooltipUxp"])[2]
     # Log To Console    ${accountID}
 
-    Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
+
+    Select From List By Value    //*[@script-id="AADETAILSACTIVITYLOGPENDINGFIN_DRILLDOWN_R1"]    1
+
+    # Select From List By Value    //*[@id="C1__C2__C1__C2__C1__C6__C1__C1__C1__QUE_90482F6546516C671990584_R1"]    1
     Sleep    2s
 
     Click Element    //*[@title="Launch"]
