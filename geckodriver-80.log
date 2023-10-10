@@ -28,3 +28,26 @@ console.warn: LoginRecipes: "Falling back to a synchronous message for: https://
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
 2023-10-09 10:31:54.316 plugin-container[15084:1485477] NSNotificationCenter connection invalid
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+2023-10-09 15:05:43.814 plugin-container[28337:1931554] NSNotificationCenter connection invalid
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c, line 512: Script terminated by timeout at:
+aa.mh@https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c:512:89
+get@https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c:510:119
+stop@https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c:510:87
+aa.uk/c/<@https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c:510:412
+
+JavaScript warning: resource://gre/modules/Troubleshoot.sys.mjs, line 737: WebGL context was lost.
+JavaScript warning: resource://gre/modules/Troubleshoot.sys.mjs, line 737: WebGL context was lost.
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c, line 510: Script terminated by timeout at:
+aa.uk/c/<@https://www.googletagmanager.com/gtag/js?id=G-2VC139B3XV&l=dataLayer&cx=c:510:408
+
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+2023-10-10 14:52:27.266 plugin-container[77425:2804746] NSNotificationCenter connection invalid
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+JavaScript warning: https://temenosdev.capcfintech.com/Browser/servletcontroller?MODE=XX&PRODUCT=ContextEnquiry&PRESENTATION_TYPE=&AF_SESSION_UID=1883ab82-95dd-4ba5-a0c9-eaefdc488e8b&LogicalScreenModel[1].TargetPKInputFieldNameInCallingPage=C1__WORKINGELEMENTS[1].PRIMARYKEY[1].VALUE&LogicalScreenModel[1].TargetParametersInCallingPage=resetUseAuthCallBackFunction(p_compID%2C%20false)%3B&LogicalScreenModel[1].IRISInputContext=PctAA.ARRANGEMENT.ACTIVITY%26forceShowSearchScreenOnLoad%3DY&LogicalScreenModel[1].IRISRelation=http%3A%2F%2Fschemas.microsoft.com%2Fado%2F2007%2F08%2Fdataservices%2Frelated%2Flive%2FenqPctAA.ARRANGEMENT.ACTIVITY&SCREENSTATE[1].COMPACTMODE=y&SCREENSTATE[1].BOXMODE=&SCREENSTATE[1].LOCKHEADER=y&SCREENSTATE[1].FONTSIZE=tc-small&BRPAjaxOpenPopupWindowService.WINDOW_ID=9f356dc4-8003-4282-bafc-d35c75144ddb, line 1: unreachable code after return statement
+JavaScript warning: https://temenosdev.capcfintech.com/Browser/servletcontroller?MODE=XX&PRODUCT=ContextEnquiry&PRESENTATION_TYPE=&AF_SESSION_UID=1883ab82-95dd-4ba5-a0c9-eaefdc488e8b&LogicalScreenModel[1].TargetPKInputFieldNameInCallingPage=C1__WORKINGELEMENTS[1].PRIMARYKEY[1].VALUE&LogicalScreenModel[1].TargetParametersInCallingPage=resetUseAuthCallBackFunction(p_compID%2C%20false)%3B&LogicalScreenModel[1].IRISInputContext=PctAA.ARRANGEMENT.ACTIVITY%26forceShowSearchScreenOnLoad%3DY&LogicalScreenModel[1].IRISRelation=http%3A%2F%2Fschemas.microsoft.com%2Fado%2F2007%2F08%2Fdataservices%2Frelated%2Flive%2FenqPctAA.ARRANGEMENT.ACTIVITY&SCREENSTATE[1].COMPACTMODE=y&SCREENSTATE[1].BOXMODE=&SCREENSTATE[1].LOCKHEADER=y&SCREENSTATE[1].FONTSIZE=tc-small&BRPAjaxOpenPopupWindowService.WINDOW_ID=9f356dc4-8003-4282-bafc-d35c75144ddb, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."
+JavaScript warning: https://temenosdev.capcfintech.com/Browser/servletcontroller?MODE=XX&PRODUCT=CompositeScreen&PRESENTATION_TYPE=&LogicalScreenModel[1].T24Command=COS%20AA.FIND.ARRANGEMENT.AL&WorkingElements[1].IsMainDashboardWindow=N&AF_SESSION_UID=1883ab82-95dd-4ba5-a0c9-eaefdc488e8b&SCREENSTATE[1].COMPACTMODE=y&SCREENSTATE[1].BOXMODE=&SCREENSTATE[1].LOCKHEADER=y&SCREENSTATE[1].FONTSIZE=tc-small&BRPAjaxOpenPopupWindowService.WINDOW_ID=a7e8d846-9346-4aa2-ab37-e2004fc88709, line 1: unreachable code after return statement
+JavaScript warning: https://temenosdev.capcfintech.com/Browser/servletcontroller?MODE=XX&PRODUCT=CompositeScreen&PRESENTATION_TYPE=&LogicalScreenModel[1].T24Command=COS%20AA.FIND.ARRANGEMENT.AL&WorkingElements[1].IsMainDashboardWindow=N&AF_SESSION_UID=1883ab82-95dd-4ba5-a0c9-eaefdc488e8b&SCREENSTATE[1].COMPACTMODE=y&SCREENSTATE[1].BOXMODE=&SCREENSTATE[1].LOCKHEADER=y&SCREENSTATE[1].FONTSIZE=tc-small&BRPAjaxOpenPopupWindowService.WINDOW_ID=a7e8d846-9346-4aa2-ab37-e2004fc88709, line 1: unreachable code after return statement
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://temenosdev.capcfintech.com."

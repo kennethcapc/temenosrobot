@@ -22,8 +22,17 @@ Refund_Excess_From_Expired
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -52,7 +61,7 @@ Refund_Excess_From_Expired
     Sleep    1s
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-AMOUNT--"]    100
     Sleep    1s
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-ACCT-NO--"]    1000010077
+    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-ACCT-NO--"]    1000003243
     # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
     # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
     Sleep    5s
@@ -79,8 +88,17 @@ Refund_Excess_From_Expired
 
     Firefox Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -101,7 +119,7 @@ Refund_Excess_From_Expired
     Sleep    5s
 
     Wait Until Page Contains Element    //*[contains(text(),'Unauthorised')]
-    Input Text    (//*[@name='C1__C1__C1__C1__C1__ENQAAFINDARRANGEMENTAL[1].SEARCHREQUEST[1].FILTERS[1].ARRANGEMENTID[1].OPERAND1'])[1]    1000010077
+    Input Text    (//*[@name='C1__C1__C1__C1__C1__ENQAAFINDARRANGEMENTAL[1].SEARCHREQUEST[1].FILTERS[1].ARRANGEMENTID[1].OPERAND1'])[1]    1000003243
     Sleep    1s
 
     Click Element    (//*[@title='Executes the query'])[1]
@@ -135,8 +153,17 @@ Refund_Excess_From_Expired
 
     Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC01
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH1
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -165,7 +192,7 @@ Refund_Excess_From_Expired
     Sleep    1s
     Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-AMOUNT--"]    100
     Sleep    1s
-    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-ACCT-NO--"]    1000010077
+    Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-ACCT-NO--"]    1000003243
     # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--DEBIT-VALUE-DATE--"]    23 JUN 2023
     # Input Text    //*[@id="C1__C2__C1__C1__C1__QUE_--FUNDS-TRANSFER--CREDIT-VALUE-DATE--"]    23 JUN 2023
     Sleep    5s
@@ -192,8 +219,17 @@ Refund_Excess_From_Expired
 
     Firefox Google Log In
 
-    Input Text    //*[@id='userId']    CapCLMC02
-    Click Element    //*[@id='Logon']/p[3]/input
+    # Input Text    //*[@id='userId']    CapCLMC01
+    # Click Element    //*[@id='Logon']/p[3]/input
+    Input Text    //*[@id="username"]    KENNETH2
+    Input Text    //*[@id="password"]    123456
+
+
+    # Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    # Sleep    5s
+    Wait Until Page Contains Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
+    # Click Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
+    Click Element    //*[@class="pf-c-button pf-m-primary pf-m-block btn-lg"]
 
     Wait Until Page Contains Element    //*[@class="tc-menu-trigger tc-header-icon icon-menu1 buttonClassSwitcher"]
     Sleep    5s
@@ -214,7 +250,7 @@ Refund_Excess_From_Expired
     Sleep    5s
 
     Wait Until Page Contains Element    //*[contains(text(),'Unauthorised')]
-    Input Text    (//*[@name='C1__C1__C1__C1__C1__ENQAAFINDARRANGEMENTAL[1].SEARCHREQUEST[1].FILTERS[1].ARRANGEMENTID[1].OPERAND1'])[1]    1000010077
+    Input Text    (//*[@name='C1__C1__C1__C1__C1__ENQAAFINDARRANGEMENTAL[1].SEARCHREQUEST[1].FILTERS[1].ARRANGEMENTID[1].OPERAND1'])[1]    1000003243
     Sleep    1s
 
     Click Element    (//*[@title='Executes the query'])[1]
